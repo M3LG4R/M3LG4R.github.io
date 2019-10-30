@@ -33,6 +33,15 @@ body {
 	line-height: 1;
 }
 
+#space {
+	margin-left: 5px;
+}
+
+#headshot {
+	width: 30%;
+	margin: 0 auto;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -328,7 +337,11 @@ input, select, textarea {
 		}
 
 		.row > .col-4 {
-			width: 33.33333%;
+			/* width: 33.33333%; */
+			display: flex;
+			flex-direction: column;
+    		width: 100%;
+    		justify-content: space-around;
 		}
 
 		.row > .off-4 {
@@ -1763,6 +1776,7 @@ input, select, textarea {
 			.image.avatar48 img {
 				width: 48px;
 				height: 48px;
+				border-radius: 4px;
 			}
 
 		.image.fit {
